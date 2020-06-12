@@ -20,23 +20,24 @@ export const AddTransaction = ()=>{
     }
     return(
         <>
-          <h3>Add new transaction</h3>
+          <h3 style={{textAlign:"center"}}>Add new transaction</h3>
       <form id="form" onSubmit={onSubmit}>
         <div className="form-control">
-          <label htmlFor="text">Text</label>
+         
           <input 
           type="text" 
           id="text" 
-          placeholder="Enter text..." 
+          placeholder="Enter Name Of item..." 
           value={text}
           onChange={(e)=>setText(e.target.value)}
           />
         </div>
         <div className="form-control">
-          <label htmlFor="amount"
+          <b style={{textAlign:"center",
+                     display: "flex",
+                     justifyContent: "center"}}
             >Amount <br />
-            (negative - expense, positive - income)</label
-          >
+            (negative - expense, positive - income)</b>
           <input 
           type="number" 
           id="amount" 
