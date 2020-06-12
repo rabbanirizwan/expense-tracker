@@ -14,7 +14,7 @@ export const Balance = ()=>{
              <h4>Your Balance</h4>
              <h1 id="balance">{balance}</h1>
          </div>
-         <img src={icon}/>
+         <img src={icon} alt="emogi"/>
         </div>
        
     )
